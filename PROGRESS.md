@@ -179,6 +179,80 @@ Próximos pasos:
 
 ---
 
+## 2025-12-29
+
+### Sesión 5: Refinamiento Visual y Micro-Interacciones
+
+**Completado:**
+- Cambio de tipografía body de Space Grotesk a Sora: Fuente japonesa warm geometric, más distintiva y memorable
+- Añadido textura grain SVG sutil como overlay: Opacity 3.5%, crea carácter artesanal sin ser intrusivo
+- Rediseño integral del Hero:
+  - Badge animado con entrada escalonada
+  - Línea horizontal decorativa como separador visual
+  - Círculo outline grandes como elemento decorativo
+  - Subrayado animado en "claridad" (underline que se dibuja al cargar)
+  - Animaciones escalonadas de entrada para badge, título y subtítulo
+- Mejora de cards de pilares (Brújula Costa):
+  - Números outline gigantes con webkit-text-stroke (efecto de hueco)
+  - Hover con elevación (lift effect) + shadow expansion
+  - Indicador de color lateral (accent bar que aparece al hover)
+  - Transiciones suave cubic-bezier para entrada
+- Animaciones escalonadas (stagger) en múltiples secciones:
+  - Hero: badge → título → subtítulo → CTA (delays incrementales)
+  - Metodología: pilares con entrada secuencial
+  - Valores: cards con rotación y fade simultáneo
+- Micro-interacciones mejoradas:
+  - Botones: brillo al hover (shine effect) + sombra glow
+  - Cards: transformación scale + shadow expansion
+  - Footer links: underline animado que se dibuja al hover
+- CTA Final rediseñado:
+  - Patrón de fondo sutil (rayas diagonales)
+  - Onda abstracta circular como elemento decorativo
+  - Botón con glow effect (box-shadow animada)
+  - Animación de entrada con movimiento diagonal
+- Footer refinado:
+  - Línea decorativa horizontal con degradado
+  - Links con underline animado (width 0 → 100%)
+  - Espaciado mejorado, tipografía más clara
+- Nuevos tokens de diseño CSS:
+  - Colores adicionales: --color-arena-dark, --color-azul-hover, --color-cream
+  - Transiciones mejoradas con cubic-bezier(0.4, 0, 0.2, 1) (ease-out más expresiva)
+  - Variables de radio: --radius-sm, --radius-md, --radius-lg
+  - Sombras nuevas: --shadow-glow para efectos de brillo
+  - Espaciado ampliado: --space-xl (8rem), --space-2xl (12rem)
+- Media queries mejoradas:
+  - Tablet (768px): ajuste de padding, grid 2 columnas en pilares
+  - Desktop (1024px): layout completo, espaciado generoso
+  - Large desktop (1200px+): max-width enforcement
+- Actualización HTML:
+  - Cambio de Space Grotesk a Sora en link de Google Fonts
+  - Badge en Hero ahora dinámico ("Influencer Marketing")
+  - Mejora de meta tags: descripción Open Graph más completa
+  - Eliminación de credencial duplicada en Hero
+
+**Decisiones técnicas:**
+- Sora sobre Space Grotesk: Warm geometric japonesa evita genericidad, mantiene legibilidad, diferencia visual clara
+- Grain texture overlay: Opacity muy baja (3.5%) para mantener legibilidad pero añadir carácter artesanal sutil
+- Animaciones escalonadas (stagger): Crea narrativa visual, guía atención del usuario secuencialmente
+- Cubic-bezier(0.4, 0, 0.2, 1): Easing out más expresiva que ease, da sensación de refinamiento
+- Números outline en pilares: Impacto visual fuerte sin saturar, aprovecha webkit-text-stroke para efecto de "hueco"
+- Patrón de fondo sutil en CTA final: Rompe monotonía sin competir con contenido
+
+**Issues encontrados y solucionados:**
+- Tipografía Space Grotesk demasiado genérica: Solución: cambiar a Sora (mantiene características de humanista + geometric pero con calor)
+- Animaciones demasiado "corporativas" (ease-in-out estándar): Solución: implementar cubic-bezier personalizado para mayor refinamiento
+- Números en pilares sin suficiente contraste visual: Solución: webkit-text-stroke para efecto outline, aumentar tamaño
+- Footer muy minimalista, sin interacción: Solución: underline animado en links, espaciado mejorado
+
+**Próximos pasos:**
+- Validar performance con Lighthouse (target > 90 en todas métricas)
+- Revisar accesibilidad con herramientas (focus states, contrast ratios)
+- Pruebas de responsividad en dispositivos reales (mobile, tablet, desktop)
+- Obtener fuentes finales (Overheat, PP Neue Machina) e integrar cuando estén disponibles
+- Obtener logo final en SVG
+
+---
+
 ## Notas de Decisiones
 
 ### 2024-12-29
