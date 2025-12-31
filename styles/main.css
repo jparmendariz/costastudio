@@ -651,7 +651,7 @@ p { max-width: 65ch; }
 
 .servicios__header {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 .servicios__label {
@@ -665,13 +665,14 @@ p { max-width: 65ch; }
 
 .servicios__title {
   color: var(--color-negro);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .servicios__intro {
   font-size: var(--text-body);
   font-weight: 300;
   opacity: 0.6;
+  margin-top: 0;
 }
 
 .servicios__grid {
@@ -817,7 +818,7 @@ p { max-width: 65ch; }
 
 .metodologia__header {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
   position: relative;
   z-index: 1;
 }
@@ -833,7 +834,7 @@ p { max-width: 65ch; }
 
 .metodologia__title {
   color: var(--color-blanco);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .metodologia__intro {
@@ -841,6 +842,7 @@ p { max-width: 65ch; }
   font-weight: 300;
   color: var(--color-blanco);
   opacity: 0.6;
+  margin-top: 0;
 }
 
 .metodologia__compass {
@@ -958,7 +960,7 @@ p { max-width: 65ch; }
 
 .valores__header {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
   position: relative;
   z-index: 1;
 }
@@ -1036,7 +1038,7 @@ p { max-width: 65ch; }
 
 .portafolio__header {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 .portafolio__label {
@@ -1050,13 +1052,14 @@ p { max-width: 65ch; }
 
 .portafolio__title {
   color: var(--color-negro);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .portafolio__intro {
   font-size: var(--text-body);
   font-weight: 300;
   opacity: 0.6;
+  margin-top: 0;
 }
 
 .portafolio__grid {
