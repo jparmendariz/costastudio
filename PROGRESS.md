@@ -253,6 +253,40 @@ Próximos pasos:
 
 ---
 
+## 2025-12-30
+
+### Sesión 6: Evolución del Tagline y Alineación Conceptual
+
+**Completado:**
+- Cambio estratégico del tagline hero: "Desde la costa, todo se ve con claridad" → "Donde las ideas tocan tierra"
+- Actualización de meta tag Open Graph (og:description) para consistencia en redes sociales
+- Revisión exhaustiva de arquitectura conceptual del sitio
+
+**Decisiones clave:**
+- **Nuevo tagline:** "Donde las ideas tocan tierra" captura la esencia de Costa Studio más claramente que el anterior
+  - **Concepto:** La costa es el punto de unión entre lo infinito (el mar, las ideas, lo desconocido) y lo finito (lo accionable, concreto, la data)
+  - **Por qué:** La palabra "tierra" representa lo ejecutable y tangible, diferenciando Costa Studio de agencias que solo especulan con ideas
+  - **Efecto visual:** Se mantiene el underline animado en "tierra" para dar énfasis al concepto de ejecución
+
+**Archivos modificados:**
+- `index.html` línea 47-50: Actualizado h1 del hero con nuevo tagline
+- `index.html` línea 10: Actualizado meta tag og:description para reflejar el nuevo mensaje
+
+**Razones detrás de la decisión:**
+- Tagline anterior era demasiado visual/observacional ("todo se ve con claridad")
+- Nuevo tagline es más activo y propositivo: enfatiza la transformación (ideas → ejecución)
+- Alinea mejor con la voz de marca: "Claro, Cálido, Preciso, Culto, Inspirador"
+- Diferencia mejor de competencia: no es solo claridad de visión, es capacidad de ejecutar
+
+**Próximos pasos:**
+- Validar el nuevo tagline con stakeholders
+- Revisar performance con Lighthouse (target > 90 en todas métricas)
+- Pruebas de accesibilidad en focus states y contrast ratios
+- Obtener fuentes finales (Overheat, PP Neue Machina) cuando estén disponibles
+- Obtener logo final en SVG
+
+---
+
 ## Notas de Decisiones
 
 ### 2024-12-29
@@ -274,3 +308,31 @@ Próximos pasos:
 
 - **Decisión:** Custom properties CSS como base del design system
 - **Razón:** Facilita mantenimiento y cambios globales cuando lleguen fuentes finales y logo definitivo
+
+### 2025-12-30
+- **Decisión:** Cambiar tagline a "Donde las ideas tocan tierra"
+- **Razón:** Mejor captura el valor diferenciador de Costa Studio (no solo visión clara, sino ejecución concreta); más activo y propositivo que versión anterior
+
+---
+
+## 2025-12-30 (Tarde)
+
+### Sesión 7: GitHub Setup e Integración Inicial
+
+**Completado:**
+- Instalado GitHub CLI (gh) via Homebrew
+- Autenticado cuenta jparmendariz en GitHub CLI
+- Verificado acceso a GitHub y repositorios
+- Actualizado PROGRESS.md con bitácora de sesiones previas
+- Preparado proyecto para subida a GitHub
+
+**Decisiones técnicas:**
+- Usar GitHub CLI (gh) para crear repositorio: Más rápido que interfaz web, automatizable
+- Estructura de repositorio: costa-studio/costa-studio.github.io para GitHub Pages
+- Commit inicial incluye toda la base del proyecto: HTML, CSS, JS, documentación y assets
+
+**Próximos pasos:**
+- Crear repositorio costa-studio/costa-studio.github.io en GitHub
+- Subir proyecto completo con `git push`
+- Configurar GitHub Pages si es necesario
+- Validar sitio live en https://costa-studio.github.io
