@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Costa Studio - Agencia boutique de influencer marketing. Base propietaria de 3,000+ influencers en México. Estrategia y ejecución lean.">
+  <meta name="description" content="Costa Studio - Agencia boutique de influencer marketing data-driven. Guiamos marcas en la creación de relaciones auténticas que generan valor real.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Costa Studio | Influencer Marketing con Claridad">
-  <meta property="og:description" content="Donde las ideas tocan tierra. Agencia boutique con base de 3,000+ influencers en México.">
+  <meta property="og:title" content="Costa Studio | Donde las ideas tocan tierra">
+  <meta property="og:description" content="Agencia boutique de influencer marketing con base propietaria de 3,000+ creadores en México. Craftmanship sobre volumen.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://costastudio.mx">
+  <meta property="og:image" content="https://costastudio.mx/assets/og-image.jpg">
 
-  <!-- Favicon placeholder -->
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚣</text></svg>">
 
-  <!-- Fonts: Bebas Neue (display) + Sora (body - Japanese-inspired, warm geometric) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -22,9 +23,21 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles/main.css">
 
-  <title>Costa Studio | Influencer Marketing con Claridad</title>
+  <title>Costa Studio | Donde las ideas tocan tierra</title>
 </head>
 <body>
+  <!-- ====================================================================
+       Loading Screen
+       ==================================================================== -->
+  <div class="loader" id="loader">
+    <div class="loader__content">
+      <div class="loader__logo">COSTA</div>
+      <div class="loader__bar">
+        <div class="loader__progress"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- ====================================================================
        Header - Sticky con CTA
        ==================================================================== -->
@@ -33,106 +46,265 @@
       <a href="/" class="header__logo" aria-label="Costa Studio - Inicio">
         COSTA STUDIO
       </a>
+      <div class="header__menu">
+        <a href="#proposito" class="header__link">Propósito</a>
+        <a href="#servicios" class="header__link">Servicios</a>
+        <a href="#metodologia" class="header__link">Metodología</a>
+        <a href="#portafolio" class="header__link">Portafolio</a>
+      </div>
       <a href="#agendar" class="btn-primary header__cta">Agendar llamada</a>
     </nav>
   </header>
 
   <main>
     <!-- ==================================================================
-         Hero - Propuesta de valor
+         HERO - Fullscreen Video Background
          ================================================================== -->
-    <section class="hero section" aria-labelledby="hero-title">
-      <div class="container hero__content">
-        <span class="hero__badge">Influencer Marketing</span>
-        <h1 id="hero-title" class="hero__title">
-          Donde las ideas<br>
-          tocan <span class="hero__title-accent">tierra</span>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__video-container">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/hero-poster.jpg"
+        >
+          <source src="https://raw.githubusercontent.com/jparmendariz/costastudio/main/videos/Cinematic-Ocean-Beach-With-Surfer-Stand-In-Sun-2025-12-08-02-41-11-Utc.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__badge" data-animate="fade-up">
+          <span class="hero__badge-dot"></span>
+          Influencer Marketing Data-Driven
+        </div>
+
+        <h1 id="hero-title" class="hero__title" data-animate="split-text">
+          <span class="hero__title-line">Donde las ideas</span>
+          <span class="hero__title-line hero__title-accent">tocan tierra</span>
         </h1>
-        <p class="hero__subtitle">
-          Estrategia y ejecución lean con base propietaria de 3,000+ creadores verificados en México.
+
+        <p class="hero__subtitle" data-animate="fade-up" data-delay="0.4">
+          Guiamos a las marcas en la creación de relaciones auténticas
+          que generan valor real.
         </p>
-        <a href="#agendar" class="btn-primary btn-primary--large hero__cta">
-          Agendar llamada
-        </a>
+
+        <div class="hero__ctas" data-animate="fade-up" data-delay="0.6">
+          <a href="#agendar" class="btn-primary btn-primary--large">
+            Agendar llamada
+          </a>
+          <a href="#proposito" class="btn-secondary">
+            Conocer más
+            <svg class="btn-secondary__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" data-animate="fade-up" data-delay="1">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
       </div>
     </section>
 
     <!-- ==================================================================
-         Filosofia - Manifesto
+         PROPOSITO - Video Background con Overlay
          ================================================================== -->
-    <section class="filosofia section" aria-labelledby="filosofia-title">
-      <div class="container filosofia__content">
-        <h2 id="filosofia-title" class="filosofia__title">
-          Craftmanship sobre volumen
+    <section class="proposito section" id="proposito" aria-labelledby="proposito-title">
+      <div class="proposito__video-container">
+        <video
+          class="proposito__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          data-lazy-video
+        >
+          <source src="https://raw.githubusercontent.com/jparmendariz/costastudio/main/videos/Water-With-Reflections-Sunlight-And-Shadows-2025-12-08-13-32-43-Utc.mp4" type="video/mp4">
+        </video>
+        <div class="proposito__overlay"></div>
+      </div>
+
+      <div class="container proposito__content">
+        <div class="proposito__label" data-animate="fade-up">Nuestro Propósito</div>
+
+        <h2 id="proposito-title" class="proposito__title" data-animate="reveal-text">
+          Guiar a las marcas en la creación de relaciones auténticas
+          que generen un valor real
         </h2>
-        <div class="filosofia__text">
-          <p>
-            Cuando navegas sin rumbo en el océano de creadores,
-            la costa se vuelve tu mejor aliada.
-          </p>
-          <p>
-            No somos una fábrica de campañas. Somos un estudio
-            donde cada colaboración se trata como una obra,
-            no como producción en serie.
-          </p>
-          <p class="filosofia__highlight">
-            No buscamos influencers. Cartografiamos conexiones genuinas
-            entre marcas y creadores.
-          </p>
+
+        <div class="proposito__divider" data-animate="scale-x"></div>
+
+        <p class="proposito__text" data-animate="fade-up" data-delay="0.2">
+          Construimos puentes duraderos que conectan marcas con personas.
+          No somos una fábrica de campañas. Somos un estudio donde cada
+          colaboración se trata como una obra, no como producción en serie.
+        </p>
+
+        <div class="proposito__stats" data-animate="fade-up" data-delay="0.4">
+          <div class="proposito__stat">
+            <span class="proposito__stat-number" data-count="3000">0</span>
+            <span class="proposito__stat-plus">+</span>
+            <span class="proposito__stat-label">Creadores verificados</span>
+          </div>
+          <div class="proposito__stat">
+            <span class="proposito__stat-number" data-count="100">0</span>
+            <span class="proposito__stat-percent">%</span>
+            <span class="proposito__stat-label">Data-driven</span>
+          </div>
+          <div class="proposito__stat">
+            <span class="proposito__stat-number">24/7</span>
+            <span class="proposito__stat-label">Comunicación en tiempo real</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ==================================================================
-         Metodologia - La Brujula Costa
+         SERVICIOS - Grid Dinámico
          ================================================================== -->
-    <section class="metodologia section" aria-labelledby="metodologia-title">
+    <section class="servicios section" id="servicios" aria-labelledby="servicios-title">
       <div class="container">
-        <h2 id="metodologia-title" class="metodologia__title">
-          La Brújula Costa
-        </h2>
-        <p class="metodologia__intro">
-          Nuestra metodología propietaria en cuatro pilares
-        </p>
+        <div class="servicios__header">
+          <div class="servicios__label" data-animate="fade-up">Lo que hacemos</div>
+          <h2 id="servicios-title" class="servicios__title" data-animate="fade-up" data-delay="0.1">
+            Servicios
+          </h2>
+          <p class="servicios__intro" data-animate="fade-up" data-delay="0.2">
+            Combinamos creatividad con datos para campañas que impactan.
+          </p>
+        </div>
 
-        <div class="metodologia__grid">
-          <article class="pilar">
+        <div class="servicios__grid">
+          <article class="servicio" data-animate="fade-up" data-delay="0.1">
+            <div class="servicio__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M24 14v10l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__titulo">Influencer Marketing</h3>
+            <p class="servicio__descripcion">
+              Campañas estratégicas con creadores verificados.
+              Tracking en tiempo real y métricas que importan:
+              CPV, CPE, engagement rate desagregado.
+            </p>
+            <div class="servicio__tags">
+              <span>Estrategia</span>
+              <span>Ejecución</span>
+              <span>Medición</span>
+            </div>
+          </article>
+
+          <article class="servicio servicio--featured" data-animate="fade-up" data-delay="0.2">
+            <div class="servicio__badge">Tecnología propietaria</div>
+            <div class="servicio__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 24l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__titulo">Dashboard de Métricas</h3>
+            <p class="servicio__descripcion">
+              Monitoreo en tiempo real de todas tus campañas.
+              Transparencia total que nadie más ofrece.
+              Data insights únicos en la industria.
+            </p>
+            <div class="servicio__tags">
+              <span>Real-time</span>
+              <span>Data</span>
+              <span>Insights</span>
+            </div>
+          </article>
+
+          <article class="servicio" data-animate="fade-up" data-delay="0.3">
+            <div class="servicio__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M24 8l4 8 8 1-6 6 2 8-8-4-8 4 2-8-6-6 8-1 4-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="servicio__titulo">Consultoría Creativa</h3>
+            <p class="servicio__descripcion">
+              Estrategia de marca con rigor de consultoría.
+              Entendemos tendencias culturales para crear
+              conexiones genuinas con tu audiencia.
+            </p>
+            <div class="servicio__tags">
+              <span>Estrategia</span>
+              <span>Cultura</span>
+              <span>Tendencias</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         METODOLOGÍA - La Brújula Costa con Video
+         ================================================================== -->
+    <section class="metodologia section" id="metodologia" aria-labelledby="metodologia-title">
+      <div class="metodologia__video-container">
+        <video
+          class="metodologia__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          data-lazy-video
+        >
+          <source src="https://raw.githubusercontent.com/jparmendariz/costastudio/main/videos/Aerial-View-Of-Tropical-Beach-Philippines-2025-12-08-10-14-55-Utc.mp4" type="video/mp4">
+        </video>
+        <div class="metodologia__overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="metodologia__header">
+          <div class="metodologia__label" data-animate="fade-up">Nuestra metodología</div>
+          <h2 id="metodologia-title" class="metodologia__title" data-animate="fade-up" data-delay="0.1">
+            La Brújula Costa
+          </h2>
+          <p class="metodologia__intro" data-animate="fade-up" data-delay="0.2">
+            Cuatro pilares que guían cada proyecto hacia resultados extraordinarios.
+          </p>
+        </div>
+
+        <div class="metodologia__compass">
+          <article class="pilar pilar--n" data-animate="fade-up" data-delay="0.1">
             <span class="pilar__numero">01</span>
             <h3 class="pilar__titulo">Cartografía</h3>
             <p class="pilar__descripcion">
               Mapeamos 3,000+ influencers con tecnología avanzada.
-              Cada perfil verificado y categorizado por audiencia,
-              engagement y afinidad de marca.
+              Cada perfil verificado por audiencia, engagement y afinidad.
             </p>
           </article>
 
-          <article class="pilar">
+          <article class="pilar pilar--e" data-animate="fade-up" data-delay="0.2">
             <span class="pilar__numero">02</span>
             <h3 class="pilar__titulo">Estrategia</h3>
             <p class="pilar__descripcion">
               Diseñamos campañas con rigor de consultoría.
-              Objetivos claros, KPIs medibles,
-              creatividad con propósito.
+              Objetivos claros, KPIs medibles, creatividad con propósito.
             </p>
           </article>
 
-          <article class="pilar">
+          <article class="pilar pilar--s" data-animate="fade-up" data-delay="0.3">
             <span class="pilar__numero">03</span>
             <h3 class="pilar__titulo">Ejecución Lean</h3>
             <p class="pilar__descripcion">
               Implementamos con agilidad y optimización constante.
-              Sin burocracia de agencia grande,
-              con resultados de primera línea.
+              Sin burocracia, con resultados de primera línea.
             </p>
           </article>
 
-          <article class="pilar">
+          <article class="pilar pilar--w" data-animate="fade-up" data-delay="0.4">
             <span class="pilar__numero">04</span>
             <h3 class="pilar__titulo">Comunicación 24/7</h3>
             <p class="pilar__descripcion">
               Acceso en tiempo real al estado de tu campaña.
-              Chatbot con IA que responde desde tu celular,
-              cualquier día, cualquier hora.
+              Respuestas cualquier día, cualquier hora.
             </p>
           </article>
         </div>
@@ -140,36 +312,78 @@
     </section>
 
     <!-- ==================================================================
-         Valores - Por que Costa
+         VALORES - Parallax con Video
          ================================================================== -->
-    <section class="valores section" aria-labelledby="valores-title">
+    <section class="valores section" id="valores" aria-labelledby="valores-title">
+      <div class="valores__video-container">
+        <video
+          class="valores__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          data-lazy-video
+          data-parallax
+        >
+          <source src="https://raw.githubusercontent.com/jparmendariz/costastudio/main/videos/Footage-Of-Footprints-In-The-Sand-4K-2025-08-28-16-34-52-Utc.mp4" type="video/mp4">
+        </video>
+        <div class="valores__overlay"></div>
+      </div>
+
       <div class="container">
-        <h2 id="valores-title" class="valores__title">
-          Por qué Costa
-        </h2>
+        <div class="valores__header">
+          <div class="valores__label" data-animate="fade-up">Por qué elegirnos</div>
+          <h2 id="valores-title" class="valores__title" data-animate="fade-up" data-delay="0.1">
+            Nuestros Valores
+          </h2>
+        </div>
 
         <div class="valores__grid">
-          <article class="valor">
+          <article class="valor" data-animate="fade-up" data-delay="0.1">
+            <div class="valor__icon">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <path d="M32 8L8 24v16l24 16 24-16V24L32 8z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M32 24v16" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M20 30l12 8 12-8" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
             <h3 class="valor__titulo">Craftmanship</h3>
             <p class="valor__descripcion">
               Cada campaña tratada como obra, no producción en serie.
-              Menos proyectos, clientes más felices.
+              Menos proyectos, clientes más felices. Elevamos el potencial
+              humano a través de creatividad y maestría.
             </p>
           </article>
 
-          <article class="valor">
-            <h3 class="valor__titulo">Estrategia + Datos</h3>
+          <article class="valor" data-animate="fade-up" data-delay="0.2">
+            <div class="valor__icon">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M32 16v16l12 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="32" cy="32" r="4" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="valor__titulo">Data + Estrategia</h3>
             <p class="valor__descripcion">
-              Rigor de consultoría combinado con
-              3,000+ creadores verificados.
+              Rigor de consultoría combinado con tecnología propietaria.
+              Redefinimos y elevamos el estándar de la industria con
+              decisiones basadas en datos reales.
             </p>
           </article>
 
-          <article class="valor">
-            <h3 class="valor__titulo">Ejecución Lean</h3>
+          <article class="valor" data-animate="fade-up" data-delay="0.3">
+            <div class="valor__icon">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <path d="M16 48l16-32 16 32" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M20 40h24" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="32" cy="24" r="4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="valor__titulo">Cultura Amplificada</h3>
             <p class="valor__descripcion">
-              Sin burocracia de agencia grande.
-              Trabajas directo con los fundadores.
+              Leemos, entendemos y amplificamos la cultura.
+              Sensibilidad a corrientes culturales que nos permite
+              crear conexiones genuinas y relevantes.
             </p>
           </article>
         </div>
@@ -177,43 +391,165 @@
     </section>
 
     <!-- ==================================================================
-         CTA Final - Agendar llamada
+         PORTAFOLIO - Showcase Premium
+         ================================================================== -->
+    <section class="portafolio section" id="portafolio" aria-labelledby="portafolio-title">
+      <div class="container">
+        <div class="portafolio__header">
+          <div class="portafolio__label" data-animate="fade-up">Nuestro trabajo</div>
+          <h2 id="portafolio-title" class="portafolio__title" data-animate="fade-up" data-delay="0.1">
+            Portafolio
+          </h2>
+          <p class="portafolio__intro" data-animate="fade-up" data-delay="0.2">
+            Campañas que conectan marcas con audiencias de manera auténtica.
+          </p>
+        </div>
+
+        <div class="portafolio__grid">
+          <article class="proyecto proyecto--large proyecto--featured" data-animate="fade-up" data-delay="0.1">
+            <a href="https://www.instagram.com/thebeautybar_condesa/" target="_blank" rel="noopener" class="proyecto__link">
+              <div class="proyecto__media">
+                <img src="https://raw.githubusercontent.com/jparmendariz/costastudio/main/photos/The%20Beauty%20Bar/Tbb4.jpg" alt="The Beauty Bar - Campaña de Influencer Marketing" class="proyecto__imagen">
+                <div class="proyecto__overlay">
+                  <span class="proyecto__categoria">Influencer Marketing</span>
+                  <h3 class="proyecto__titulo">The Beauty Bar</h3>
+                  <p class="proyecto__descripcion">Colaboración con influencer de alto impacto para posicionamiento de marca y awareness.</p>
+                  <div class="proyecto__stats">
+                    <div class="proyecto__stat">
+                      <span class="proyecto__stat-value">+230K</span>
+                      <span class="proyecto__stat-label">Visualizaciones</span>
+                    </div>
+                    <div class="proyecto__stat">
+                      <span class="proyecto__stat-value">2.5%</span>
+                      <span class="proyecto__stat-label">Engagement Rate</span>
+                    </div>
+                    <div class="proyecto__stat">
+                      <span class="proyecto__stat-value">&lt;1 mes</span>
+                      <span class="proyecto__stat-label">Tiempo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="proyecto" data-animate="fade-up" data-delay="0.2">
+            <div class="proyecto__media">
+              <div class="proyecto__overlay">
+                <span class="proyecto__categoria">Dashboard</span>
+                <h3 class="proyecto__titulo">Próximamente</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="proyecto" data-animate="fade-up" data-delay="0.3">
+            <div class="proyecto__media">
+              <div class="proyecto__overlay">
+                <span class="proyecto__categoria">Consultoría</span>
+                <h3 class="proyecto__titulo">Próximamente</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portafolio__cta" data-animate="fade-up" data-delay="0.4">
+          <p>Resultados que hablan por sí mismos.</p>
+          <a href="#agendar" class="btn-secondary">
+            Escribe tu historia de éxito
+            <svg class="btn-secondary__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CTA FINAL - Fullscreen Video
          ================================================================== -->
     <section class="cta-final section" id="agendar" aria-labelledby="cta-title">
+      <div class="cta-final__video-container">
+        <video
+          class="cta-final__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          data-lazy-video
+        >
+          <source src="https://raw.githubusercontent.com/jparmendariz/costastudio/main/videos/Silhouette-Of-Birds-Circling-Against-Clear-Sky-Lo-2025-12-08-07-44-06-Utc.mp4" type="video/mp4">
+        </video>
+        <div class="cta-final__overlay"></div>
+      </div>
+
       <div class="container cta-final__content">
-        <h2 id="cta-title" class="cta-final__title">
-          ¿Lista tu marca para navegar?
+        <div class="cta-final__badge" data-animate="fade-up">
+          Comienza tu viaje
+        </div>
+
+        <h2 id="cta-title" class="cta-final__title" data-animate="fade-up" data-delay="0.1">
+          Impulsa tu marca<br>con nosotros
         </h2>
-        <p class="cta-final__subtitle">
-          Conversación de 20 minutos. Sin compromiso.
+
+        <p class="cta-final__subtitle" data-animate="fade-up" data-delay="0.2">
+          Conversación de 30 minutos. Sin compromiso.
+          Solo claridad sobre cómo podemos ayudarte.
         </p>
-        <a href="#" class="btn-primary btn-primary--large cta-final__btn"
-           target="_blank" rel="noopener">
-          Agendar llamada
-        </a>
-        <p class="cta-final__email">
-          O escríbenos a <a href="mailto:hola@costastudio.mx">hola@costastudio.mx</a>
-        </p>
+
+        <div class="cta-final__buttons" data-animate="fade-up" data-delay="0.3">
+          <a href="https://calendly.com/jparmendariz-costastudio/30min" class="btn-primary btn-primary--large btn-primary--glow" target="_blank" rel="noopener">
+            Agendar llamada
+          </a>
+        </div>
+
+        <div class="cta-final__contact" data-animate="fade-up" data-delay="0.4">
+          <p>O escríbenos directamente a</p>
+          <a href="mailto:jparmendariz@costastudio.mx" class="cta-final__email">
+            jparmendariz@costastudio.mx
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- ====================================================================
-       Footer
+       FOOTER
        ==================================================================== -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__content">
-      <div class="footer__logo">
-        COSTA STUDIO
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__logo">COSTA STUDIO</div>
+          <p class="footer__tagline">Donde las ideas tocan tierra</p>
+        </div>
+
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Navegación</h4>
+            <a href="#proposito">Propósito</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#metodologia">Metodología</a>
+            <a href="#portafolio">Portafolio</a>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Contacto</h4>
+            <a href="mailto:jparmendariz@costastudio.mx">jparmendariz@costastudio.mx</a>
+            <a href="https://calendly.com/jparmendariz-costastudio/30min" target="_blank" rel="noopener">Agendar llamada</a>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title">Redes</h4>
+            <a href="https://www.instagram.com/costastudio.mx/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://linkedin.com/company/costa-studio-mx" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
       </div>
-      <div class="footer__links">
-        <a href="mailto:hola@costastudio.mx">hola@costastudio.mx</a>
-        <a href="https://instagram.com/costastudio.mx" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://linkedin.com/company/costa-studio-mx" target="_blank" rel="noopener">LinkedIn</a>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">2025 Costa Studio. Ciudad de México.</p>
+        <p class="footer__credits">Craftmanship sobre volumen.</p>
       </div>
-      <p class="footer__copy">
-        2025 Costa Studio. Mexico.
-      </p>
     </div>
   </footer>
 
