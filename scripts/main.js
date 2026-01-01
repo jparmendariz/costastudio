@@ -423,34 +423,53 @@
   });
 
   // ==========================================================================
-  // Video Lazy Loading & Loop Fallback
+  // Video Management - Loading, Loop & Error Handling
   // ==========================================================================
-  const lazyVideos = document.querySelectorAll('[data-lazy-video]');
   const allVideos = document.querySelectorAll('video');
 
-  // Fallback para asegurar que los videos hagan loop correctamente
   allVideos.forEach(video => {
+    // Asegurar atributos correctos
+    video.muted = true;
+    video.playsInline = true;
+    video.loop = true;
+
+    // Fallback para loop - reiniciar cuando termine
     video.addEventListener('ended', () => {
       video.currentTime = 0;
       video.play().catch(() => {});
     });
-  });
 
-  const videoObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const video = entry.target;
-        video.play().catch(() => {
-          // Video autoplay might be blocked, that's okay
-        });
-        videoObserver.unobserve(video);
+    // Reintentar reproducción si se pausa inesperadamente
+    video.addEventListener('pause', () => {
+      // Solo reintentar si el video debería estar reproduciéndose
+      if (!video.ended && video.readyState >= 2) {
+        setTimeout(() => {
+          video.play().catch(() => {});
+        }, 100);
       }
     });
-  }, { rootMargin: '200px' });
 
-  lazyVideos.forEach(video => {
-    video.pause();
-    videoObserver.observe(video);
+    // Manejar errores de carga
+    video.addEventListener('error', () => {
+      console.log('Video error, retrying...', video.src);
+      setTimeout(() => {
+        video.load();
+        video.play().catch(() => {});
+      }, 2000);
+    });
+
+    // Cuando el video esté listo, reproducir
+    video.addEventListener('canplay', () => {
+      video.play().catch(() => {});
+    });
+
+    // Intentar reproducir inmediatamente
+    video.play().catch(() => {
+      // Si falla, esperar e intentar de nuevo
+      setTimeout(() => {
+        video.play().catch(() => {});
+      }, 1000);
+    });
   });
 
   // ==========================================================================
