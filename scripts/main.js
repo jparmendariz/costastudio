@@ -411,9 +411,18 @@
   });
 
   // ==========================================================================
-  // Video Lazy Loading
+  // Video Lazy Loading & Loop Fallback
   // ==========================================================================
   const lazyVideos = document.querySelectorAll('[data-lazy-video]');
+  const allVideos = document.querySelectorAll('video');
+
+  // Fallback para asegurar que los videos hagan loop correctamente
+  allVideos.forEach(video => {
+    video.addEventListener('ended', () => {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    });
+  });
 
   const videoObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
