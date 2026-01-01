@@ -364,6 +364,12 @@ p { max-width: 65ch; }
   padding: calc(var(--space-xs) * 1.5) var(--space-sm);
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
 /* Language Toggle */
 .lang-toggle {
   display: flex !important;
