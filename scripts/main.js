@@ -253,9 +253,6 @@
 
     // Update HTML lang attribute
     document.documentElement.lang = lang;
-
-    // Update placeholder translations
-    updatePlaceholders();
   };
 
   function toggleLanguage() {
@@ -662,73 +659,6 @@
   // Prevent FOUC (Flash of Unstyled Content)
   // ==========================================================================
   document.documentElement.classList.add('js-loaded');
-
-  // ==========================================================================
-  // Newsletter Form Handler
-  // ==========================================================================
-  const newsletterForm = document.getElementById('newsletter-form');
-
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const emailInput = this.querySelector('.newsletter__input');
-      const email = emailInput.value;
-
-      // Validate email
-      if (!email || !email.includes('@')) {
-        emailInput.style.borderColor = '#e74c3c';
-        return;
-      }
-
-      // Get success message from translations
-      const successMessage = translations[currentLang]['newsletter.success'] || '¡Gracias! Te enviamos un correo de confirmación.';
-
-      // Set success state
-      this.setAttribute('data-success-message', successMessage);
-      this.classList.add('is-success');
-
-      // Hide privacy text
-      const privacyText = this.querySelector('.newsletter__privacy');
-      if (privacyText) {
-        privacyText.style.display = 'none';
-      }
-
-      // TODO: Integrate with Beehiiv API
-      // For now, log the subscription
-      console.log('Newsletter subscription:', email);
-
-      // Optional: Send to a webhook or API endpoint
-      // fetch('YOUR_BEEHIIV_ENDPOINT', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email: email })
-      // });
-    });
-
-    // Reset border on input focus
-    const emailInput = newsletterForm.querySelector('.newsletter__input');
-    if (emailInput) {
-      emailInput.addEventListener('focus', function() {
-        this.style.borderColor = 'transparent';
-      });
-    }
-  }
-
-  // ==========================================================================
-  // Update Placeholder Translations
-  // ==========================================================================
-  function updatePlaceholders() {
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      const key = el.getAttribute('data-i18n-placeholder');
-      if (translations[currentLang] && translations[currentLang][key]) {
-        el.placeholder = translations[currentLang][key];
-      }
-    });
-  }
-
-  // Initial placeholder update
-  document.addEventListener('DOMContentLoaded', updatePlaceholders);
 
   // ==========================================================================
   // Console Welcome Message
