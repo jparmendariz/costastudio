@@ -536,156 +536,22 @@
   }
 
   // ==========================================================================
-  // Blog Slider - Navigation and Video Control
+  // Blog Slider - Simple Scroll Navigation
   // ==========================================================================
-  const blogSlider = document.querySelector('.blog-slider');
+  const blogTrack = document.getElementById('blog-track');
+  const blogPrev = document.getElementById('blog-prev');
+  const blogNext = document.getElementById('blog-next');
 
-  if (blogSlider) {
-    const track = document.getElementById('blog-track');
-    const slides = track.querySelectorAll('.blog-slider__slide');
-    const prevBtn = document.getElementById('blog-prev');
-    const nextBtn = document.getElementById('blog-next');
-    const dotsContainer = document.getElementById('blog-dots');
-    const currentCounter = document.getElementById('blog-current');
-    const totalCounter = document.getElementById('blog-total');
+  if (blogTrack && blogPrev && blogNext) {
+    const scrollAmount = 400;
 
-    let currentIndex = 0;
-    const totalSlides = slides.length;
-
-    // Update total counter
-    totalCounter.textContent = totalSlides;
-
-    // Create dots
-    slides.forEach((_, index) => {
-      const dot = document.createElement('button');
-      dot.className = 'blog-slider__dot' + (index === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', `Ir al artículo ${index + 1}`);
-      dot.addEventListener('click', () => goToSlide(index));
-      dotsContainer.appendChild(dot);
+    blogNext.addEventListener('click', () => {
+      blogTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
 
-    const dots = dotsContainer.querySelectorAll('.blog-slider__dot');
-
-    // Go to specific slide
-    function goToSlide(index) {
-      // Pause previous video
-      const prevVideo = slides[currentIndex].querySelector('.blog-slider__video');
-      if (prevVideo) {
-        prevVideo.pause();
-      }
-      slides[currentIndex].classList.remove('active');
-      dots[currentIndex].classList.remove('active');
-
-      currentIndex = index;
-
-      // Update track position
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-      // Update active states
-      slides[currentIndex].classList.add('active');
-      dots[currentIndex].classList.add('active');
-      currentCounter.textContent = currentIndex + 1;
-
-      // Load and play current video
-      const currentVideo = slides[currentIndex].querySelector('.blog-slider__video');
-      if (currentVideo) {
-        if (currentVideo.readyState === 0) {
-          currentVideo.load();
-        }
-        currentVideo.play().catch(() => {});
-      }
-    }
-
-    // Next slide
-    function nextSlide() {
-      const next = (currentIndex + 1) % totalSlides;
-      goToSlide(next);
-    }
-
-    // Previous slide
-    function prevSlide() {
-      const prev = (currentIndex - 1 + totalSlides) % totalSlides;
-      goToSlide(prev);
-    }
-
-    // Event listeners
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (!isElementInViewport(blogSlider)) return;
-
-      if (e.key === 'ArrowRight') {
-        nextSlide();
-      } else if (e.key === 'ArrowLeft') {
-        prevSlide();
-      }
+    blogPrev.addEventListener('click', () => {
+      blogTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
-
-    // Touch/Swipe support
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    track.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    track.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      handleSwipe();
-    }, { passive: true });
-
-    function handleSwipe() {
-      const swipeThreshold = 50;
-      const diff = touchStartX - touchEndX;
-
-      if (Math.abs(diff) > swipeThreshold) {
-        if (diff > 0) {
-          nextSlide();
-        } else {
-          prevSlide();
-        }
-      }
-    }
-
-    // Helper to check if element is in viewport
-    function isElementInViewport(el) {
-      const rect = el.getBoundingClientRect();
-      return (
-        rect.top < window.innerHeight &&
-        rect.bottom > 0
-      );
-    }
-
-    // Initialize first slide
-    slides[0].classList.add('active');
-
-    // Observer to play/pause videos based on slider visibility
-    const sliderObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const currentVideo = slides[currentIndex].querySelector('.blog-slider__video');
-        if (entry.isIntersecting) {
-          if (currentVideo) {
-            if (currentVideo.readyState === 0) {
-              currentVideo.load();
-            }
-            currentVideo.play().catch(() => {});
-          }
-        } else {
-          if (currentVideo) {
-            currentVideo.pause();
-          }
-        }
-      });
-    }, { threshold: 0.3 });
-
-    sliderObserver.observe(blogSlider);
-
-    // Auto-advance (optional - uncomment if desired)
-    // let autoPlayInterval = setInterval(nextSlide, 6000);
-    // blogSlider.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-    // blogSlider.addEventListener('mouseleave', () => autoPlayInterval = setInterval(nextSlide, 6000));
   }
 
   // ==========================================================================
