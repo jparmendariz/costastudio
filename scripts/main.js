@@ -23,7 +23,7 @@
       'hero.badge': 'Influencer Marketing Data-Driven',
       'hero.title1': 'Donde las ideas',
       'hero.title2': 'tocan tierra',
-      'hero.subtitle': 'Guiamos a las marcas en la creación de relaciones auténticas que generan valor real.',
+      'hero.subtitle': 'Estrategias de influencer marketing que convierten alcance en ROI medible.',
       'hero.cta1': 'Agendar llamada',
       'hero.cta2': 'Conocer más',
 
@@ -134,7 +134,7 @@
       'hero.badge': 'Data-Driven Influencer Marketing',
       'hero.title1': 'Where ideas',
       'hero.title2': 'touch ground',
-      'hero.subtitle': 'We guide brands in creating authentic relationships that generate real value.',
+      'hero.subtitle': 'Influencer marketing strategies that turn reach into measurable ROI.',
       'hero.cta1': 'Book a call',
       'hero.cta2': 'Learn more',
 
