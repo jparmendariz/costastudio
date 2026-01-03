@@ -499,7 +499,6 @@
     // Asegurar atributos correctos
     video.muted = true;
     video.playsInline = true;
-    video.loop = true;
 
     // Observar el video
     videoObserver.observe(video);
