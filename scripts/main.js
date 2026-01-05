@@ -21,32 +21,32 @@
       'nav.cta': 'Agendar llamada',
 
       // Hero
-      'hero.badge': 'Influencer Marketing Data-Driven',
+      'hero.badge': '<em>Influencer Marketing Data-Driven</em>',
       'hero.title1': 'Donde las ideas',
       'hero.title2': 'tocan tierra',
-      'hero.subtitle': 'Estrategias de influencer marketing que convierten alcance en ROI medible.',
+      'hero.subtitle': 'Estrategias de <em>influencer marketing</em> donde nuestro fee depende de tu crecimiento en ventas.',
       'hero.cta1': 'Agendar llamada',
       'hero.cta2': 'Conocer más',
 
       // Purpose
       'purpose.label': 'Qué hacemos',
       'purpose.title': 'Conectamos marcas con creadores para campañas que generan resultados',
-      'purpose.text': 'Somos una agencia de influencer marketing. Diseñamos y ejecutamos campañas con una base propietaria de 3,000+ creadores verificados. Cada colaboración se trata como una obra, no como producción en serie.',
+      'purpose.text': 'Somos una agencia de <em>influencer marketing</em>. Diseñamos y ejecutamos campañas con una base propietaria de 3,000+ creadores verificados. Cada colaboración se trata como una obra, no como producción en serie.',
       'purpose.stat1': 'Creadores verificados',
       'purpose.stat3': 'Comunicación en tiempo real',
 
       // Services
       'services.label': 'Cómo lo hacemos',
       'services.title': 'Servicios',
-      'services.intro': 'Desde la estrategia hasta la medición de resultados, manejamos todo el proceso de tu campaña con influencers.',
-      'services.s1.title': 'Influencer Marketing',
-      'services.s1.desc': 'Campañas estratégicas con creadores verificados. Tracking en tiempo real y métricas que importan: CPV, CPE, engagement rate desagregado.',
+      'services.intro': 'Desde la estrategia hasta la medición de resultados, manejamos todo el proceso de tu campaña con <em>influencers</em>.',
+      'services.s1.title': '<em>Influencer Marketing</em>',
+      'services.s1.desc': 'Campañas estratégicas con creadores verificados. <em>Tracking</em> en tiempo real y métricas que importan: CPV, CPE, <em>engagement rate</em> desagregado.',
       'services.s1.tag1': 'Estrategia',
       'services.s1.tag2': 'Ejecución',
       'services.s1.tag3': 'Medición',
       'services.s2.badge': 'Tecnología propietaria',
-      'services.s2.title': 'Dashboard de Métricas',
-      'services.s2.desc': 'Monitoreo en tiempo real de todas tus campañas. Transparencia total que nadie más ofrece. Data insights únicos en la industria.',
+      'services.s2.title': '<em>Dashboard</em> de Métricas',
+      'services.s2.desc': 'Monitoreo en tiempo real de todas tus campañas. Transparencia total que nadie más ofrece. <em>Data insights</em> únicos en la industria.',
       'services.s3.title': 'Consultoría Creativa',
       'services.s3.desc': 'Estrategia de marca con rigor de consultoría. Entendemos tendencias culturales para crear conexiones genuinas con tu audiencia.',
       'services.s3.tag1': 'Estrategia',
@@ -56,12 +56,12 @@
       // Methodology
       'methodology.label': 'Nuestro proceso',
       'methodology.title': 'La Brújula Costa',
-      'methodology.intro': 'Así trabajamos cada campaña de influencer marketing, desde la selección de creadores hasta la medición de resultados.',
+      'methodology.intro': 'Así trabajamos cada campaña de <em>influencer marketing</em>, desde la selección de creadores hasta la medición de resultados.',
       'methodology.p1.title': 'Cartografía',
-      'methodology.p1.desc': 'Mapeamos 3,000+ influencers con tecnología avanzada. Cada perfil verificado por audiencia, engagement y afinidad.',
+      'methodology.p1.desc': 'Mapeamos 3,000+ <em>influencers</em> con tecnología avanzada. Cada perfil verificado por audiencia, <em>engagement</em> y afinidad.',
       'methodology.p2.title': 'Estrategia',
       'methodology.p2.desc': 'Diseñamos campañas con rigor de consultoría. Objetivos claros, KPIs medibles, creatividad con propósito.',
-      'methodology.p3.title': 'Ejecución Lean',
+      'methodology.p3.title': 'Ejecución <em>Lean</em>',
       'methodology.p3.desc': 'Implementamos con agilidad y optimización constante. Sin burocracia, con resultados de primera línea.',
       'methodology.p4.title': 'Comunicación 24/7',
       'methodology.p4.desc': 'Acceso en tiempo real al estado de tu campaña. Respuestas cualquier día, cualquier hora.',
@@ -69,9 +69,9 @@
       // Values
       'values.label': 'Por qué elegirnos',
       'values.title': 'Nuestros Valores',
-      'values.v1.title': 'Craftmanship',
+      'values.v1.title': '<em>Craftmanship</em>',
       'values.v1.desc': 'Cada campaña tratada como obra, no producción en serie. Menos proyectos, clientes más felices. Elevamos el potencial humano a través de creatividad y maestría.',
-      'values.v2.title': 'Data + Estrategia',
+      'values.v2.title': '<em>Data</em> + Estrategia',
       'values.v2.desc': 'Rigor de consultoría combinado con tecnología propietaria. Redefinimos y elevamos el estándar de la industria con decisiones basadas en datos reales.',
       'values.v3.title': 'Cultura Amplificada',
       'values.v3.desc': 'Leemos, entendemos y amplificamos la cultura. Sensibilidad a corrientes culturales que nos permite crear conexiones genuinas y relevantes.',
@@ -79,9 +79,9 @@
       // Portfolio
       'portfolio.label': 'Nuestro trabajo',
       'portfolio.title': 'Portafolio',
-      'portfolio.intro': 'Campañas de influencer marketing con resultados medibles.',
-      'portfolio.tbb.category': 'Influencer Marketing',
-      'portfolio.tbb.desc': 'Colaboración con influencer de alto impacto para posicionamiento de marca y awareness.',
+      'portfolio.intro': 'Campañas de <em>influencer marketing</em> con resultados medibles.',
+      'portfolio.tbb.category': '<em>Influencer Marketing</em>',
+      'portfolio.tbb.desc': 'Colaboración con <em>influencer</em> de alto impacto para posicionamiento de marca y <em>awareness</em>.',
       'portfolio.tbb.views': 'Visualizaciones',
       'portfolio.tbb.time': 'Tiempo',
       'portfolio.coming': 'Próximamente',
@@ -92,14 +92,14 @@
       // Blog
       'blog.label': 'Industria',
       'blog.title': 'Blog',
-      'blog.intro': 'Lo último en influencer marketing de fuentes líderes en la industria.',
+      'blog.intro': 'Lo último en <em>influencer marketing</em> de fuentes líderes en la industria.',
       'blog.readMore': 'Leer artículo',
 
       // About
       'about.label': 'Quiénes somos',
-      'about.title': 'Una agencia boutique con mentalidad de consultoría',
+      'about.title': 'Una agencia <em>boutique</em> con mentalidad de consultoría',
       'about.p1': 'Somos un equipo multidisciplinario en Ciudad de México que combina estrategia, creatividad y tecnología para transformar cómo las marcas se conectan con sus audiencias.',
-      'about.p2': 'Nacimos de la convicción de que el influencer marketing merece un enfoque más riguroso: menos improvisación, más estrategia. Menos vanity metrics, más resultados reales.',
+      'about.p2': 'Nacimos de la convicción de que el <em>influencer marketing</em> merece un enfoque más riguroso: menos improvisación, más estrategia. Menos <em>vanity metrics</em>, más resultados reales.',
       'about.p3': 'Trabajamos con un número limitado de clientes porque creemos en la profundidad sobre el volumen. Cada campaña recibe nuestra atención completa.',
       'about.pillar1.title': 'Estrategia Primero',
       'about.pillar1.desc': 'Cada decisión respaldada por datos y objetivos claros.',
@@ -112,29 +112,31 @@
       // Newsletter
       'newsletter.label': 'Mantente informado',
       'newsletter.title': 'Claridad cada semana',
-      'newsletter.intro': 'Recibe insights semanales de la industria: tendencias, casos y movimientos en influencer marketing que importan para tu marca.',
+      'newsletter.intro': 'Recibe <em>insights</em> semanales de la industria: tendencias, casos y movimientos en <em>influencer marketing</em> que importan para tu marca.',
       'newsletter.placeholder': 'tu@email.com',
       'newsletter.btn': 'Suscribirme',
       'newsletter.privacy': 'Sin spam. Solo contenido que vale la pena. Cancela cuando quieras.',
       'newsletter.f1': 'Noticias de Forbes, WSJ, NYT',
       'newsletter.f2': 'México, USA y Global',
-      'newsletter.f3': 'Cada jueves en tu inbox',
+      'newsletter.f3': 'Cada jueves en tu <em>inbox</em>',
       'newsletter.success': '¡Gracias! Te enviamos un correo de confirmación.',
 
       // CTA
       'cta.badge': 'Comienza tu viaje',
       'cta.title': 'Impulsa tu marca<br>con nosotros',
-      'cta.subtitle': 'Conversación de 30 minutos sobre tu estrategia de influencer marketing. Sin compromiso. Solo claridad sobre cómo podemos ayudarte.',
+      'cta.subtitle': 'Conversación de 30 minutos sobre tu estrategia de <em>influencer marketing</em>. Sin compromiso. Solo claridad sobre cómo podemos ayudarte.',
       'cta.btn': 'Agendar llamada',
-      'cta.or': 'O escríbenos directamente a',
+      'cta.or': 'O escríbenos directamente',
+      'cta.here': 'aquí',
 
       // Footer
       'footer.tagline': 'Donde las ideas tocan tierra',
       'footer.nav': 'Navegación',
       'footer.contact': 'Contacto',
+      'footer.email': 'Escríbenos',
       'footer.social': 'Redes',
       'footer.copy': '2025 Costa Studio. Ciudad de México.',
-      'footer.credits': 'Craftmanship sobre volumen.'
+      'footer.credits': '<em>Craftmanship</em> sobre volumen.'
     },
     en: {
       // Navigation
@@ -150,7 +152,7 @@
       'hero.badge': 'Data-Driven Influencer Marketing',
       'hero.title1': 'Where ideas',
       'hero.title2': 'touch ground',
-      'hero.subtitle': 'Influencer marketing strategies that turn reach into measurable ROI.',
+      'hero.subtitle': 'Influencer marketing strategies where our fee depends on your sales growth.',
       'hero.cta1': 'Book a call',
       'hero.cta2': 'Learn more',
 
@@ -252,12 +254,14 @@
       'cta.title': 'Boost your brand<br>with us',
       'cta.subtitle': '30-minute conversation about your influencer marketing strategy. No commitment. Just clarity on how we can help you.',
       'cta.btn': 'Book a call',
-      'cta.or': 'Or write to us directly at',
+      'cta.or': 'Or write to us directly',
+      'cta.here': 'here',
 
       // Footer
       'footer.tagline': 'Where ideas touch ground',
       'footer.nav': 'Navigation',
       'footer.contact': 'Contact',
+      'footer.email': 'Email us',
       'footer.social': 'Social',
       'footer.copy': '2025 Costa Studio. Mexico City.',
       'footer.credits': 'Craftmanship over volume.'
