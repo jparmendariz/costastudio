@@ -514,34 +514,32 @@
     }
   }
 
-  // Other videos only on desktop
-  if (!isMobile) {
-    const backgroundVideos = document.querySelectorAll('.proposito__video, .metodologia__video, .valores__video, .cta-final__video, .blog-slider__video');
+  // Background videos on all devices
+  const backgroundVideos = document.querySelectorAll('.proposito__video, .metodologia__video, .valores__video, .cta-final__video, .blog-slider__video');
 
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const video = entry.target;
-        if (entry.isIntersecting) {
-          if (video.preload === 'none' && video.readyState === 0) {
-            video.load();
-          }
-          if (video.readyState >= 3) {
-            playVideo(video);
-          } else {
-            video.addEventListener('canplaythrough', () => playVideo(video), { once: true });
-          }
-        } else {
-          pauseVideo(video);
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        if (video.preload === 'none' && video.readyState === 0) {
+          video.load();
         }
-      });
-    }, { rootMargin: '100px', threshold: 0.1 });
-
-    backgroundVideos.forEach(video => {
-      video.muted = true;
-      video.playsInline = true;
-      videoObserver.observe(video);
+        if (video.readyState >= 3) {
+          playVideo(video);
+        } else {
+          video.addEventListener('canplaythrough', () => playVideo(video), { once: true });
+        }
+      } else {
+        pauseVideo(video);
+      }
     });
-  }
+  }, { rootMargin: '100px', threshold: 0.1 });
+
+  backgroundVideos.forEach(video => {
+    video.muted = true;
+    video.playsInline = true;
+    videoObserver.observe(video);
+  });
 
   // ==========================================================================
   // Parallax Effect - Desktop Only
