@@ -8,3 +8,14 @@ referencia/
 # IDE
 .idea/
 .vscode/
+
+# Archivos pesados (no necesarios para el sitio)
+assets/IMAGES/260316-Emiliano Medina x TBB.gif
+assets/IMAGES/260316-Emiliano Medina x TBB.mov
+assets/IMAGES/260318-Emiliano Medina x TBB.mov
+
+# Archivos de desarrollo
+.claude/
+.superpowers/
+docs/plans/
+docs/superpowers/

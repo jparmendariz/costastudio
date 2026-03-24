@@ -13,46 +13,47 @@
   <meta property="og:image" content="https://costastudio.mx/assets/og-image.jpg">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚣</text></svg>">
+  <link rel="icon" type="image/png" href="assets/LOGO/PNG/COSTA_STUDIO_LOGO.png">
 
   <!-- Fonts loaded via CSS -->
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles/main.css">
 
-  <title>Costa Studio | Donde las ideas tocan tierra</title>
+  <title>Costa Studio</title>
 </head>
 <body>
   <!-- ====================================================================
-       Loading Screen
+       Intro Overlay — Acto 1
        ==================================================================== -->
-  <div class="loader" id="loader">
-    <div class="loader__content">
-      <div class="loader__logo">COSTA</div>
-      <div class="loader__bar">
-        <div class="loader__progress"></div>
-      </div>
-    </div>
+  <div class="intro-overlay" id="intro-overlay">
+    <span class="intro-overlay__text">COSTA</span>
   </div>
+
+  <!-- Fallback: sin JS el contenido se muestra directo -->
+  <noscript>
+    <style>
+      .intro-overlay { display: none !important; }
+      .intro-hidden { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
 
   <!-- ====================================================================
        Header - Sticky con CTA
        ==================================================================== -->
-  <header class="header" role="banner">
-    <nav class="header__nav container">
+  <header class="header intro-hidden" role="banner">
+    <nav class="header__nav">
       <a href="/" class="header__logo" aria-label="Costa Studio - Inicio">
         COSTA STUDIO
       </a>
       <div class="header__menu">
         <a href="#nosotros" class="header__link" data-i18n="nav.about">Nosotros</a>
         <a href="#servicios" class="header__link" data-i18n="nav.services">Servicios</a>
+        <a href="#valores" class="header__link" data-i18n="nav.values">Valores</a>
         <a href="#portafolio" class="header__link" data-i18n="nav.portfolio">Portafolio</a>
         <a href="#agendar" class="header__link" data-i18n="nav.contact">Contacto</a>
       </div>
       <div class="header__actions">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">
-          <span class="lang-toggle__current">ES</span>
-        </button>
         <button class="header__hamburger" aria-label="Abrir menú" aria-expanded="false">
           <span></span>
           <span></span>
@@ -67,61 +68,48 @@
     <nav class="mobile-menu__nav">
       <a href="#nosotros" class="mobile-menu__link" data-i18n="nav.about">Nosotros</a>
       <a href="#servicios" class="mobile-menu__link" data-i18n="nav.services">Servicios</a>
+      <a href="#valores" class="mobile-menu__link" data-i18n="nav.values">Valores</a>
       <a href="#portafolio" class="mobile-menu__link" data-i18n="nav.portfolio">Portafolio</a>
       <a href="#agendar" class="mobile-menu__link" data-i18n="nav.contact">Contacto</a>
       <a href="#agendar" class="btn-primary mobile-menu__cta" data-i18n="nav.cta">Agendar llamada</a>
-      <button class="lang-toggle lang-toggle--mobile" id="lang-toggle-mobile" aria-label="Cambiar idioma">
-        <span class="lang-toggle__current">ES</span>
-      </button>
     </nav>
   </div>
 
   <main>
     <!-- ==================================================================
-         HERO - Fullscreen Video Background
+         HERO - Layout 2 columnas (texto izq + imagen der)
          ================================================================== -->
     <section class="hero" aria-label="Costa Studio">
-      <div class="hero__video-container">
-        <video
-          class="hero__video"
-          autoplay
-          muted
-          playsinline
-          preload="auto"
-          poster="assets/hero-poster.jpg"
-        >
-          <source src="https://cdn.jsdelivr.net/gh/jparmendariz/costastudio@main/videos/Cinematic-Ocean-Beach-With-Surfer-Stand-In-Sun-2025-12-08-02-41-11-Utc.mp4" type="video/mp4">
-        </video>
-        <div class="hero__overlay"></div>
-      </div>
-
-      <div class="hero__content container">
-        <img
-          src="assets/LOGO/COLORES/YELLOW_02.jpg"
-          alt="Costa Studio"
-          class="hero__logo"
-          data-animate="fade-up"
-        >
-
-        <div class="hero__badge" data-animate="fade-up" data-delay="0.2">
-          <span class="hero__badge-dot"></span>
-          <span data-i18n="hero.badge">Influencer Marketing Data-Driven</span>
+      <div class="hero__layout">
+        <div class="hero__text-col">
+          <div class="hero__logo-card intro-hidden">
+            <img
+              src="assets/LOGO/COLORES/YELLOW_02.jpg"
+              alt="Costa Studio"
+              class="hero__logo"
+            >
+          </div>
+          <p class="hero__subtitle intro-hidden">
+            En un mar de contenido, es fácil perder el rumbo; pero desde la Costa, todo se ve con claridad.
+          </p>
+          <div class="hero__ctas intro-hidden">
+            <a href="#nosotros" class="btn-secondary">
+              <span data-i18n="hero.cta2">Conocer más</span>
+              <svg class="btn-secondary__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
         </div>
-
-        <p class="hero__subtitle" data-animate="fade-up" data-delay="0.4">
-          En un mar de contenido, es fácil perder el rumbo; pero desde la Costa, todo se ve con claridad.
-        </p>
-
-        <div class="hero__ctas" data-animate="fade-up" data-delay="0.6">
-          <a href="#nosotros" class="btn-secondary">
-            <span data-i18n="hero.cta2">Conocer más</span>
-            <svg class="btn-secondary__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+        <div class="hero__image">
+          <img
+            src="assets/IMAGES/260213-Gemini-Beach.png"
+            alt="Vista aérea de playa — Costa Studio"
+          >
         </div>
       </div>
     </section>
+
 
     <!-- ==================================================================
          QUIÉNES SOMOS - Sobre la Agencia
@@ -134,7 +122,7 @@
           </h2>
           <div class="nosotros__text" data-animate="fade-up" data-delay="0.2">
             <p data-i18n="about.p1">
-              Somos una agencia boutique de influencer marketing con mentalidad de consultoría y un profundo entendimiento de la cultura.
+              Somos una agencia boutique de <em>influencer marketing</em> con mentalidad de consultoría y un profundo entendimiento de la cultura.
             </p>
             <p data-i18n="about.p2">
               Diseñamos campañas alineadas a objetivos claros de negocio, sin perder la conexión emocional con la audiencia.
@@ -152,27 +140,78 @@
       </div>
     </section>
 
+
     <!-- ==================================================================
-         SERVICIOS - Layout 2 columnas
+         SERVICIOS - Layout 2 zonas: top (2 col + SVG overlay) + bottom (3 col)
          ================================================================== -->
     <section class="servicios section" id="servicios" aria-labelledby="servicios-title">
-      <div class="servicios__layout">
+      <!-- Zona superior: texto + gráfica con SVG overlay -->
+      <div class="servicios__top">
         <div class="servicios__text-col">
           <h2 id="servicios-title" class="servicios__title" data-animate="fade-up" data-delay="0.1" data-i18n="services.title">
-            Servicios
+            SERVICIOS
           </h2>
           <div class="servicios__text" data-animate="fade-up" data-delay="0.2">
-            <p data-i18n="services.p1">En donde las demás agencias ven ruido, nosotros vemos claridad.</p>
-            <p data-i18n="services.p2">Ejecutamos campañas con talento cuidadosamente seleccionado y utilizamos nuestra experiencia en métodos cuantitativos para entender el impacto real en las métricas que importan.</p>
-            <p data-i18n="services.p3">Nuestro modelo de pricing refleja esta filosofía: una parte de nuestra compensación está ligada directamente al impacto medido de la campaña.</p>
-            <p class="servicios__footnote">*Contáctanos para conocer nuestros modelos de pricing.</p>
+            <p class="servicios__subtitle" data-i18n="services.subtitle">En donde las demás agencias ven ruido, nosotros vemos claridad</p>
+            <p data-i18n="services.p1">Diseñamos y ejecutamos campañas de <em>influencer marketing</em> de principio a fin: desde la selección del talento, hasta la medición del impacto real en tu negocio.</p>
+            <p data-i18n="services.p2">Cada campaña se monitorea en tiempo real con bases de datos y rastreadores web. Al cierre, estimamos resultados a través de un análisis contrafactual: no reportamos <em>vanity metrics</em>, medimos lo que cambió.</p>
           </div>
         </div>
-        <div class="servicios__diagram" data-animate="fade-up" data-delay="0.3">
-          <img src="assets/IMAGES/260315-Campaign attribution.svg" alt="Diagrama de atribución de campaña" loading="lazy">
+        <div class="servicios__chart-col" data-animate="fade-up" data-delay="0.3">
+          <h3 class="servicios__chart-title">Ventas a través del tiempo</h3>
+          <p class="servicios__chart-subtitle">Periodo de campaña</p>
+          <!-- Gráfica simplificada solo para mobile -->
+          <div class="servicios__chart-mobile" aria-hidden="true">
+            <svg viewBox="0 0 300 140" preserveAspectRatio="xMidYMid meet">
+              <!-- Área sombreada entre líneas (impacto) -->
+              <polygon points="120,120 260,35 300,35 300,120"
+                       fill="#4173D1" opacity="0.08"/>
+              <!-- Contrafactual: línea azul horizontal -->
+              <line x1="0" y1="120" x2="300" y2="120"
+                    stroke="#4173D1" stroke-width="2.5"
+                    vector-effect="non-scaling-stroke"/>
+              <!-- Escenario real: línea negra que sube -->
+              <polyline points="0,120 120,120 260,35 300,35"
+                        fill="none" stroke="#1a1a1a" stroke-width="3"
+                        vector-effect="non-scaling-stroke"/>
+            </svg>
+          </div>
+          <div class="servicios__chart-labels">
+            <div class="servicios__label servicios__label--real">
+              Campaña:<span>Escenario real</span>
+            </div>
+            <div class="servicios__label servicios__label--contra">
+              Contrafactual:<span>Escenario sin la campaña</span>
+            </div>
+          </div>
+        </div>
+        <!-- SVG Lines Overlay: cruza ambas columnas -->
+        <svg class="servicios__lines-overlay" viewBox="0 0 1000 480" preserveAspectRatio="none" aria-hidden="true">
+          <polyline points="0,478 500,478 740,238 1000,238"
+                    fill="none" stroke="#1a1a1a" stroke-width="3"
+                    vector-effect="non-scaling-stroke"/>
+          <line x1="500" y1="478" x2="1000" y2="478"
+                fill="none" stroke="#4173D1" stroke-width="2.5"
+                vector-effect="non-scaling-stroke"/>
+        </svg>
+      </div>
+      <!-- Zona inferior: 3 fases de campaña -->
+      <div class="servicios__phases">
+        <div class="servicios__phase" data-animate="fade-up" data-delay="0.1">
+          <h3>COMIENZA LA CAMPAÑA</h3>
+          <p>Seleccionamos creadores con filtro de audiencia, afinidad y <em>engagement</em> verificado.</p>
+        </div>
+        <div class="servicios__phase" data-animate="fade-up" data-delay="0.2">
+          <h3>DURANTE LA CAMPAÑA</h3>
+          <p>Monitoreamos métricas en tiempo real para detectar oportunidades y ajustar en el momento.</p>
+        </div>
+        <div class="servicios__phase" data-animate="fade-up" data-delay="0.3">
+          <h3>AL CIERRE</h3>
+          <p>Estimamos el impacto de la campaña a través de un análisis contrafactual, es decir, comparamos el escenario real vs un escenario sin campaña.</p>
         </div>
       </div>
     </section>
+
 
     <!-- ==================================================================
          VALORES - Creatividad, Datos y Cultura
@@ -195,7 +234,7 @@
               <h3 class="valores__subtitle">Datos y Estrategia</h3>
               <p>
                 Integramos análisis, criterio estratégico y visión de negocio.
-                Aplicamos rigor de consultoría y tecnología propia para elevar el estándar del influencer marketing.
+                Aplicamos rigor de consultoría y tecnología para elevar el estándar del <em>influencer marketing</em>.
               </p>
             </div>
 
@@ -214,6 +253,7 @@
       </div>
     </section>
 
+
     <!-- ==================================================================
          CASO DE ESTUDIO - The Beauty Bar
          ================================================================== -->
@@ -221,8 +261,9 @@
       <div class="portafolio__layout">
         <div class="portafolio__text-col">
           <h2 id="portafolio-title" class="portafolio__title" data-animate="fade-up" data-delay="0.1" data-i18n="portfolio.title">
-            Portafolio
+            Caso de Estudio
           </h2>
+          <p class="portafolio__case-name" data-animate="fade-up" data-delay="0.15">The Beauty Bar x @emilianomedgil</p>
           <div class="portafolio__stats" data-animate="fade-up" data-delay="0.2">
             <div class="portafolio__stat">
               <span class="portafolio__stat-value">496K</span>
@@ -238,17 +279,22 @@
             </div>
           </div>
           <div class="portafolio__text" data-animate="fade-up" data-delay="0.3">
-            <h3 class="portafolio__subtitle">Contexto del cliente</h3>
-            <p>The Beauty Bar –clínica estética, CDMX– realizaba partnerships con influencers a modo de intercambio, con impacto y alcance limitado.</p>
-            <h3 class="portafolio__subtitle">Selección de talento</h3>
-            <p>Rompiendo estereotipos. Apostamos por una voz con credibilidad cultural y baja saturación comercial en la categoría, identificando un insight clave: una parte significativa de su audiencia está compuesta por mujeres. Esto nos permitió conectar con el target desde un canal inesperado.</p>
+            <div class="portafolio__bloque">
+              <h3 class="portafolio__subtitle">Contexto del cliente</h3>
+              <p>The Beauty Bar, clínica estética, CDMX, colaboraba con <em>influencers</em> mediante intercambio de producto, con alcance e impacto limitados.</p>
+            </div>
+            <div class="portafolio__bloque">
+              <h3 class="portafolio__subtitle">Selección de talento</h3>
+              <p>Apostamos por un perfil contraintuitivo: un creador masculino con credibilidad cultural y baja saturación comercial en la categoría. El <em>insight</em>: una parte significativa de su audiencia son mujeres, lo que nos permitió conectar con el target desde un canal inesperado.</p>
+            </div>
           </div>
         </div>
         <div class="portafolio__media" data-animate="fade-up" data-delay="0.4">
-          <img src="assets/IMAGES/260316-Emiliano Medina x TBB.gif" alt="Caso de estudio: Emiliano Medina x The Beauty Bar" loading="lazy">
+          <img src="assets/IMAGES/260318-Emiliano Medina x TBB.gif" alt="Caso de estudio: Emiliano Medina x The Beauty Bar" loading="lazy">
         </div>
       </div>
     </section>
+
 
     <!-- ==================================================================
          CONTACTO

@@ -1,0 +1,72 @@
+<svg width="100%" viewBox="0 0 680 300" style="font-family: 'PP Neue Machina', sans-serif;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#4173D1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  <mask id="imagine-text-gaps-fmoyjt" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="300" fill="white"/><rect x="81.33845520019531" y="11.610901832580566" width="147.32313537597656" height="17.22248935699463" fill="black" rx="2"/><rect x="1.914999008178711" y="74.49983215332031" width="44.17000198364258" height="15.333562850952148" fill="black" rx="2"/><rect x="135.46530151367188" y="231.49981689453125" width="49.06940841674805" height="15.333562850952148" fill="black" rx="2"/><rect x="145.30764770507812" y="57.49982833862305" width="59.38471984863281" height="15.333562850952148" fill="black" rx="2"/><rect x="163.746826171875" y="147.22181701660156" width="22.506369590759277" height="31.389442443847656" fill="black" rx="2"/><rect x="481.0000305175781" y="11.610901832580566" width="100.36558532714844" height="17.22248935699463" fill="black" rx="2"/><rect x="351.9150085449219" y="74.49983215332031" width="44.17000198364258" height="15.333562850952148" fill="black" rx="2"/><rect x="485.4653015136719" y="231.49981689453125" width="49.06940841674805" height="15.333562850952148" fill="black" rx="2"/><rect x="495.3076171875" y="57.49982833862305" width="59.38471984863281" height="15.333562850952148" fill="black" rx="2"/><rect x="576" y="109.49983215332031" width="42.664764404296875" height="15.333562850952148" fill="black" rx="2"/><rect x="576" y="124.49983978271484" width="75.54389953613281" height="15.333562850952148" fill="black" rx="2"/><rect x="28" y="-6.500171661376953" width="109.6036148071289" height="15.333562850952148" fill="black" rx="2"/><rect x="173" y="-6.500171661376953" width="117.439697265625" height="15.333562850952148" fill="black" rx="2"/></mask></defs>
+  
+  <!-- Left chart title: "Las demás agencias" -->
+  <text x="155" y="24" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:auto">Las demás agencias</text>
+  
+  <!-- Y axis left -->
+  <line x1="40" y1="80" x2="40" y2="220" stroke="#4173D1" stroke-width="0.5" opacity="0.4" mask="url(#imagine-text-gaps-fmoyjt)" style="fill:rgb(0, 0, 0);stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="24" y="85" text-anchor="middle" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Ventas</text>
+  
+  <!-- X axis left -->
+  <line x1="40" y1="220" x2="280" y2="220" stroke="#4173D1" stroke-width="0.5" opacity="0.4" style="fill:rgb(0, 0, 0);stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="160" y="242" text-anchor="middle" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Tiempo</text>
+  
+  <!-- Left noisy line -->
+  <path d="M50 190 &#10;           L62 188 L68 184 L75 187 L82 181 L90 178 L97 182 L105 175&#10;           L112 169 L120 172 L127 165 L135 158 L142 162 L150 148 L157 138 L165 132&#10;           L172 115 L180 105&#10;           L188 112 L195 108 L203 118 L210 125 L218 132 L225 140 L233 148&#10;           L240 158 L248 165 L255 172 L263 178 L270 182 L278 185" fill="none" stroke="#4173D1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" style="fill:none;stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:round;opacity:0.5;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Campaign period indicator -->
+  <rect x="140" y="75" width="70" height="145" fill="#C3D8EC" opacity="0.5" rx="4" style="fill:rgb(195, 216, 236);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="175" y="68" text-anchor="middle" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Campaña</text>
+  
+  <!-- Question mark -->
+  <text x="175" y="170" text-anchor="middle" font-size="28" fill="#4173D1" opacity="0.3" style="fill:rgb(65, 115, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.3;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:28px;font-weight:400;text-anchor:middle;dominant-baseline:auto">?</text>
+  
+  
+  <!-- Right chart title: Logo + "Costa Studio" -->
+  <!-- Costa Studio logo (wave isotipo) - small version -->
+  <g transform="translate(458, 10)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <path d="M0 8 Q4 4, 8 8 Q12 12, 16 8" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" style="fill:none;stroke:rgb(26, 26, 26);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <path d="M2 14 Q6 10, 10 14 Q14 18, 18 14" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.6" style="fill:none;stroke:rgb(26, 26, 26);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.6;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  </g>
+  <text x="485" y="24" text-anchor="start" font-size="14" font-weight="500" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:start;dominant-baseline:auto">Costa Studio</text>
+  
+  <!-- Y axis right -->
+  <line x1="390" y1="80" x2="390" y2="220" stroke="#4173D1" stroke-width="0.5" opacity="0.4" mask="url(#imagine-text-gaps-fmoyjt)" style="fill:rgb(0, 0, 0);stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="374" y="85" text-anchor="middle" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Ventas</text>
+  
+  <!-- X axis right -->
+  <line x1="390" y1="220" x2="630" y2="220" stroke="#4173D1" stroke-width="0.5" opacity="0.4" style="fill:rgb(0, 0, 0);stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="510" y="242" text-anchor="middle" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Tiempo</text>
+  
+  <!-- Baseline / seasonality -->
+  <path d="M400 190 &#10;           Q420 185, 440 180 &#10;           Q460 172, 480 167&#10;           Q500 163, 525 160&#10;           Q550 163, 570 170&#10;           Q590 180, 610 190&#10;           Q620 196, 625 200" fill="none" stroke="#C3D8EC" stroke-width="2.5" stroke-dasharray="6 4" stroke-linecap="round" style="fill:none;stroke:rgb(195, 216, 236);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-dasharray:6px, 4px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Right noisy line -->
+  <path d="M400 190 &#10;           L412 188 L418 184 L425 187 L432 181 L440 178 L447 182 L455 175&#10;           L462 169 L470 172 L477 165 L485 158 L492 162 L500 148 L507 138 L515 132&#10;           L522 115 L530 105&#10;           L538 112 L545 108 L553 118 L560 125 L568 132 L575 140 L583 148&#10;           L590 158 L598 165 L605 172 L613 178 L620 182 L628 185" fill="none" stroke="#4173D1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Campaign period indicator -->
+  <rect x="490" y="75" width="70" height="145" fill="#4173D1" opacity="0.08" rx="4" style="fill:rgb(65, 115, 209);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.08;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="525" y="68" text-anchor="middle" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:auto">Campaña</text>
+  
+  <!-- Lift annotation -->
+  <line x1="530" y1="160" x2="530" y2="113" stroke="#4173D1" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" style="fill:rgb(0, 0, 0);stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Efecto incremental label -->
+  <text x="580" y="120" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:start;dominant-baseline:auto">Efecto</text>
+  <text x="580" y="135" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:start;dominant-baseline:auto">incremental</text>
+  <line x1="540" y1="136" x2="575" y2="128" stroke="#1a1a1a" stroke-width="0.5" opacity="0.4" style="fill:rgb(0, 0, 0);stroke:rgb(26, 26, 26);color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Legend -->
+  <g transform="translate(390, 275)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <line x1="0" y1="0" x2="24" y2="0" stroke="#4173D1" stroke-width="2.5" style="fill:rgb(0, 0, 0);stroke:rgb(65, 115, 209);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <text x="32" y="4" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:start;dominant-baseline:auto">Ventas observadas</text>
+    
+    <line x1="145" y1="0" x2="169" y2="0" stroke="#C3D8EC" stroke-width="2.5" stroke-dasharray="6 4" style="fill:rgb(0, 0, 0);stroke:rgb(195, 216, 236);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-dasharray:6px, 4px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <text x="177" y="4" font-size="11" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;PP Neue Machina&quot;, sans-serif;font-size:11px;font-weight:400;text-anchor:start;dominant-baseline:auto">Baseline estacional</text>
+  </g>
+</svg>
