@@ -1,0 +1,10 @@
+# Sistema
+.DS_Store
+*.DS_Store
+
+# Referencia (no subir a GitHub)
+referencia/
+
+# IDE
+.idea/
+.vscode/

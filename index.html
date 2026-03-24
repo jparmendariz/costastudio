@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Costa Studio - Agencia de influencer marketing. Conectamos marcas con 3,000+ creadores verificados para campañas que generan resultados medibles.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Costa Studio | Donde las ideas tocan tierra">
+  <meta property="og:description" content="Agencia de influencer marketing. Conectamos marcas con 3,000+ creadores verificados para campañas con resultados medibles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://costastudio.mx">
+  <meta property="og:image" content="https://costastudio.mx/assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚣</text></svg>">
+
+  <!-- Fonts loaded via CSS -->
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Costa Studio | Donde las ideas tocan tierra</title>
+</head>
+<body>
+  <!-- ====================================================================
+       Loading Screen
+       ==================================================================== -->
+  <div class="loader" id="loader">
+    <div class="loader__content">
+      <div class="loader__logo">COSTA</div>
+      <div class="loader__bar">
+        <div class="loader__progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       Header - Sticky con CTA
+       ==================================================================== -->
+  <header class="header" role="banner">
+    <nav class="header__nav container">
+      <a href="/" class="header__logo" aria-label="Costa Studio - Inicio">
+        COSTA STUDIO
+      </a>
+      <div class="header__menu">
+        <a href="#nosotros" class="header__link" data-i18n="nav.about">Nosotros</a>
+        <a href="#servicios" class="header__link" data-i18n="nav.services">Servicios</a>
+        <a href="#portafolio" class="header__link" data-i18n="nav.portfolio">Portafolio</a>
+        <a href="#agendar" class="header__link" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="header__actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">
+          <span class="lang-toggle__current">ES</span>
+        </button>
+        <button class="header__hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <a href="#nosotros" class="mobile-menu__link" data-i18n="nav.about">Nosotros</a>
+      <a href="#servicios" class="mobile-menu__link" data-i18n="nav.services">Servicios</a>
+      <a href="#portafolio" class="mobile-menu__link" data-i18n="nav.portfolio">Portafolio</a>
+      <a href="#agendar" class="mobile-menu__link" data-i18n="nav.contact">Contacto</a>
+      <a href="#agendar" class="btn-primary mobile-menu__cta" data-i18n="nav.cta">Agendar llamada</a>
+      <button class="lang-toggle lang-toggle--mobile" id="lang-toggle-mobile" aria-label="Cambiar idioma">
+        <span class="lang-toggle__current">ES</span>
+      </button>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ==================================================================
+         HERO - Fullscreen Video Background
+         ================================================================== -->
+    <section class="hero" aria-label="Costa Studio">
+      <div class="hero__video-container">
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          playsinline
+          preload="auto"
+          poster="assets/hero-poster.jpg"
+        >
+          <source src="https://cdn.jsdelivr.net/gh/jparmendariz/costastudio@main/videos/Cinematic-Ocean-Beach-With-Surfer-Stand-In-Sun-2025-12-08-02-41-11-Utc.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content container">
+        <img
+          src="assets/LOGO/COLORES/YELLOW_02.jpg"
+          alt="Costa Studio"
+          class="hero__logo"
+          data-animate="fade-up"
+        >
+
+        <div class="hero__badge" data-animate="fade-up" data-delay="0.2">
+          <span class="hero__badge-dot"></span>
+          <span data-i18n="hero.badge">Influencer Marketing Data-Driven</span>
+        </div>
+
+        <p class="hero__subtitle" data-animate="fade-up" data-delay="0.4">
+          En un mar de contenido, es fácil perder el rumbo; pero desde la Costa, todo se ve con claridad.
+        </p>
+
+        <div class="hero__ctas" data-animate="fade-up" data-delay="0.6">
+          <a href="#nosotros" class="btn-secondary">
+            <span data-i18n="hero.cta2">Conocer más</span>
+            <svg class="btn-secondary__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         QUIÉNES SOMOS - Sobre la Agencia
+         ================================================================== -->
+    <section class="nosotros section" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="nosotros__layout">
+        <div class="nosotros__text-col">
+          <h2 id="nosotros-title" class="nosotros__title" data-animate="fade-up" data-delay="0.1" data-i18n="about.title">
+            Quiénes somos
+          </h2>
+          <div class="nosotros__text" data-animate="fade-up" data-delay="0.2">
+            <p data-i18n="about.p1">
+              Somos una agencia boutique de influencer marketing con mentalidad de consultoría y un profundo entendimiento de la cultura.
+            </p>
+            <p data-i18n="about.p2">
+              Diseñamos campañas alineadas a objetivos claros de negocio, sin perder la conexión emocional con la audiencia.
+            </p>
+            <p class="nosotros__manifesto" data-i18n="about.p3">
+              Entendemos la cultura.<br>
+              La convertimos en estrategia.<br>
+              La llevamos a resultados.
+            </p>
+          </div>
+        </div>
+        <div class="nosotros__image" data-animate="fade-up" data-delay="0.3">
+          <img src="assets/IMAGES/260315-Waves and body.jpg" alt="Texturas de mar y piel — la esencia de Costa Studio" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         SERVICIOS - Layout 2 columnas
+         ================================================================== -->
+    <section class="servicios section" id="servicios" aria-labelledby="servicios-title">
+      <div class="servicios__layout">
+        <div class="servicios__text-col">
+          <h2 id="servicios-title" class="servicios__title" data-animate="fade-up" data-delay="0.1" data-i18n="services.title">
+            Servicios
+          </h2>
+          <div class="servicios__text" data-animate="fade-up" data-delay="0.2">
+            <p data-i18n="services.p1">En donde las demás agencias ven ruido, nosotros vemos claridad.</p>
+            <p data-i18n="services.p2">Ejecutamos campañas con talento cuidadosamente seleccionado y utilizamos nuestra experiencia en métodos cuantitativos para entender el impacto real en las métricas que importan.</p>
+            <p data-i18n="services.p3">Nuestro modelo de pricing refleja esta filosofía: una parte de nuestra compensación está ligada directamente al impacto medido de la campaña.</p>
+            <p class="servicios__footnote">*Contáctanos para conocer nuestros modelos de pricing.</p>
+          </div>
+        </div>
+        <div class="servicios__diagram" data-animate="fade-up" data-delay="0.3">
+          <img src="assets/IMAGES/260315-Campaign attribution.svg" alt="Diagrama de atribución de campaña" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         VALORES - Creatividad, Datos y Cultura
+         ================================================================== -->
+    <section class="valores section" id="valores" aria-labelledby="valores-title">
+      <div class="valores__layout">
+        <div class="valores__text-col">
+          <h2 id="valores-title" class="valores__title" data-animate="fade-up" data-delay="0.1">
+            Nuestros Valores
+          </h2>
+          <div class="valores__text" data-animate="fade-up" data-delay="0.2">
+            <div class="valores__valor">
+              <h3 class="valores__subtitle">Creatividad y maestría</h3>
+              <p>
+                Cada campaña merece el mismo rigor que cualquier inversión estratégica. Combinamos visión creativa con ejecución cuidada para elevar el resultado de cada proyecto.
+              </p>
+            </div>
+
+            <div class="valores__valor">
+              <h3 class="valores__subtitle">Datos y Estrategia</h3>
+              <p>
+                Integramos análisis, criterio estratégico y visión de negocio.
+                Aplicamos rigor de consultoría y tecnología propia para elevar el estándar del influencer marketing.
+              </p>
+            </div>
+
+            <div class="valores__valor">
+              <h3 class="valores__subtitle">Cultura Amplificada</h3>
+              <p>
+                Leemos la cultura con sensibilidad.
+                Identificamos oportunidades reales de conversación y transformamos tendencias en crecimiento de marca.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="valores__image" data-animate="fade-up" data-delay="0.3">
+          <img src="assets/IMAGES/260315-Beach with surfers.jpg" alt="Playa con surfistas — la cultura y creatividad de Costa Studio" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CASO DE ESTUDIO - The Beauty Bar
+         ================================================================== -->
+    <section class="portafolio section" id="portafolio" aria-labelledby="portafolio-title">
+      <div class="portafolio__layout">
+        <div class="portafolio__text-col">
+          <h2 id="portafolio-title" class="portafolio__title" data-animate="fade-up" data-delay="0.1" data-i18n="portfolio.title">
+            Portafolio
+          </h2>
+          <div class="portafolio__stats" data-animate="fade-up" data-delay="0.2">
+            <div class="portafolio__stat">
+              <span class="portafolio__stat-value">496K</span>
+              <span class="portafolio__stat-label">Impresiones</span>
+            </div>
+            <div class="portafolio__stat">
+              <span class="portafolio__stat-value">1 mes</span>
+              <span class="portafolio__stat-label">En ejecución</span>
+            </div>
+            <div class="portafolio__stat">
+              <span class="portafolio__stat-value">+25</span>
+              <span class="portafolio__stat-label">Leads directos identificados</span>
+            </div>
+          </div>
+          <div class="portafolio__text" data-animate="fade-up" data-delay="0.3">
+            <h3 class="portafolio__subtitle">Contexto del cliente</h3>
+            <p>The Beauty Bar –clínica estética, CDMX– realizaba partnerships con influencers a modo de intercambio, con impacto y alcance limitado.</p>
+            <h3 class="portafolio__subtitle">Selección de talento</h3>
+            <p>Rompiendo estereotipos. Apostamos por una voz con credibilidad cultural y baja saturación comercial en la categoría, identificando un insight clave: una parte significativa de su audiencia está compuesta por mujeres. Esto nos permitió conectar con el target desde un canal inesperado.</p>
+          </div>
+        </div>
+        <div class="portafolio__media" data-animate="fade-up" data-delay="0.4">
+          <img src="assets/IMAGES/260316-Emiliano Medina x TBB.gif" alt="Caso de estudio: Emiliano Medina x The Beauty Bar" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CONTACTO
+         ================================================================== -->
+    <section class="contacto section" id="agendar" aria-labelledby="contacto-title">
+      <div class="container contacto__content">
+        <img
+          src="assets/LOGO/PNG/COSTA_STUDIO_LOGO.png"
+          alt="Costa Studio"
+          class="contacto__logo"
+          data-animate="fade-up"
+        >
+
+        <hr class="contacto__divider" data-animate="fade-up" data-delay="0.1">
+
+        <h2 id="contacto-title" class="contacto__title" data-animate="fade-up" data-delay="0.15">
+          Contacto
+        </h2>
+
+        <div class="contacto__names" data-animate="fade-up" data-delay="0.2">
+          <p>Juan Pablo Armendáriz</p>
+          <p>Jordán Linares</p>
+        </div>
+
+        <a href="mailto:hola@costastudio.mx" class="contacto__email" data-animate="fade-up" data-delay="0.3">
+          hola@costastudio.mx
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__content">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__logo">COSTA STUDIO</div>
+          <p class="footer__tagline" data-i18n="footer.tagline">Donde las ideas tocan tierra</p>
+        </div>
+
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.nav">Navegación</h4>
+            <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+            <a href="#servicios" data-i18n="nav.services">Servicios</a>
+            <a href="#portafolio" data-i18n="nav.portfolio">Portafolio</a>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.contact">Contacto</h4>
+            <a href="mailto:jparmendariz@costastudio.mx">jparmendariz@costastudio.mx</a>
+            <a href="https://calendly.com/jparmendariz-costastudio/30min" target="_blank" rel="noopener" data-i18n="nav.cta">Agendar llamada</a>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__col-title" data-i18n="footer.social">Redes</h4>
+            <a href="https://www.instagram.com/costastudio.mx/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://linkedin.com/company/costa-studio-mx" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">2025 Costa Studio. Ciudad de México.</p>
+        <p class="footer__credits" data-i18n="footer.credits">Craftmanship sobre volumen.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
